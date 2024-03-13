@@ -1,0 +1,15 @@
+<div class="fib-container">
+  <h2>Generate Fibonacci Series</h2>
+  <label for="fibNumber">Enter a number:</label>
+  <input type="number" id="fibNumber" [(ngModel)]="fibNumber" />
+  <button [disabled]="!fibNumber" (click)="generateFibonacci()">
+    Generate Fibonacci Series
+  </button>
+  <div *ngIf="fibNumber && fibonacciSeries.length > 0">
+    <h3>Fibonacci Series:</h3>
+    <ul *ngFor="let num of fibonacciSeries">
+      <li>{{ num }}</li>
+    </ul>
+  </div>
+</div>
+<a routerLink="/login">Back</a>

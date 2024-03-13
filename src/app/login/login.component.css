@@ -1,0 +1,28 @@
+.login-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+h2 {
+  margin: 3rem;
+}
+
+form {
+  padding: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+button {
+  margin: 0.5rem 0;
+  width: 15rem;
+  height: 2.2rem;
+  background-color: skyblue;
+  border: none;
+  cursor: pointer;
+}

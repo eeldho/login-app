@@ -1,0 +1,18 @@
+<div class="anagram-container">
+  <h2>Anagram check:</h2>
+  <label for="firstWord">Enter the first word:</label>
+  <input type="text" id="firstWord" [(ngModel)]="firstWord" />
+  <label for="secondWord">Enter the second word:</label>
+  <input type="text" id="secondWord" [(ngModel)]="secondWord" />
+  <button
+    (click)="checkAnagram()"
+    [disabled]="firstWord.length === 0 || secondWord.length === 0"
+  >
+    Check Anagram
+  </button>
+  <div *ngIf="clickedAnagram">
+    <p *ngIf="isAnagram">The entered words are anagrams!</p>
+    <p *ngIf="!isAnagram">The entered words are not anagrams.</p>
+  </div>
+</div>
+<a routerLink="/login">Back</a>

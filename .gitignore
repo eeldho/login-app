@@ -1,0 +1,7 @@
+# Ignore cache files
+.angular/cache/
+!.angular/cache/**
+!.angular/cache/**/
+!.angular/cache/**/*
+node_modules/
+.vscode/
